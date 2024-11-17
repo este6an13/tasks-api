@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "tasks-api"
+version = "0.1.0"
+description = ""
+authors = ["este6an13 <diquintero@unal.edu.co>"]
+readme = "README.md"
+
+packages = [
+    { include = "src", from = "." }
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.115.5"
+uvicorn = "^0.32.0"
+sqlalchemy = "^2.0.36"
+pytest = "^8.3.3"
+pytest-asyncio = "^0.24.0"
+httpx = "^0.27.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
